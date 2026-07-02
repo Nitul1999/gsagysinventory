@@ -5,5 +5,5 @@ The **Inventory Management System for a Local Club** is a web-based application 
 
 The application is developed using the **MERN Stack** (MongoDB, Express.js, React.js, and Node.js) for the frontend and backend, with **MySQL** used as the database for storing and managing application data.
 
- To start application
+
  
