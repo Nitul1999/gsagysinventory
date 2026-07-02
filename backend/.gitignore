@@ -1,0 +1,6 @@
+# node js node modules files
+/node_modules
+
+
+#Enviroment Variables
+.env 

@@ -1,0 +1,264 @@
+.main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.main-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.main-text-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.main-text-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-text-section h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.main-text-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Facility Section */
+.facility-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.facility-head h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.facility-head p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.facility-section {
+  padding: 50px 20px;
+  background: #f8f8f8;
+}
+.facility-section-sub {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.facility-one {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* important-section */
+.important-section {
+  padding: 50px 20px;
+  background: #ffffff;
+}
+.important-section {
+  padding: 70px 50px;
+  background: #ffffff;
+}
+
+.important-section-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.important-section-text {
+  flex: 1;
+}
+
+.important-content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.important-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
+
+/* Right Image */
+.important-section-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.important-section-image img {
+  width: 100%;
+  max-width: 150px;
+}
+
+/* STATS */
+.stats-section {
+  text-align: center;
+  padding: 70px 20px;
+  background: #fdffe3;
+}
+.stats-section p{
+  font-size: 14px;
+}
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.stat-box {
+  background:  #001529;
+  padding: 30px;
+  color: #f8f8f8;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* HOW */
+.how-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 80px;
+  gap: 40px;
+}
+.how-content h1,p{
+  text-align: center;
+}
+.how-content p{
+  font-size: 14px;
+}
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  color: white;
+}
+.step {
+  background: #001529;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(233, 233, 233, 0.08);
+}
+.how-section .how-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.how-section .how-image img{
+   width: 100%;
+  max-width: 400px;
+}
+
+/* =====================
+RESPONSIVE DESIGN
+===================== */
+
+.about-section { padding: 10px 90px; background: #483a4e;color: white; }
+.about-sub { display: flex; align-items: center; justify-content: center;margin: 20px;}
+.about-sub .about-text h1,p{
+  text-align: center;
+}
+.about-sub .about-text p{
+  font-size: 17px;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-text-section {
+    max-width: 100%;
+  }
+  .main-text-section p{
+    text-align: center;
+  }
+  .hero-image {
+    max-width: 230px;
+  }
+  .facility-section-sub {
+    flex-direction: column;
+  }
+  .facility-one {
+    width: 100%;
+  }
+  .important-content h1 {
+    font-size: 1.5rem;
+  }
+  .important-content p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .important-section-sub {
+    flex-direction: column;
+    text-align: center;
+  }
+  .important-section-image img {
+    max-width: 30%;
+  }
+  .stats-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-box {
+    width: 200px;
+  }
+  .how-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-section { padding: 10px 10px;}
+  .about-sub .about-text p{
+  font-size: 13px;
+  line-height: 1.3;
+  text-align: justify;
+}
+}

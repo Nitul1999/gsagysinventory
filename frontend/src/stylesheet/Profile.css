@@ -1,0 +1,39 @@
+.pro-container-contact{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    color: black;
+}
+.pro-container-contact > .text{
+
+    background-color: rgba(244, 198, 253, 0.904);
+    padding:4px 15px 4px 15px ;
+    border-radius: 10px;
+}
+ .text>.icon{
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    animation: rotate 7s infinite linear;
+    
+}
+
+.pro-container-dgrole{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-content:center;
+    align-items: center;
+    padding: 10px;
+}
+.pro-container-dgrole >.text{
+background-color: rgba(248, 228, 163, 0.904);
+    padding:4px 15px 4px 15px ;
+    border-radius: 10px;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}

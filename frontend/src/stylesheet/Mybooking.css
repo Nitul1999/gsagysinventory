@@ -1,0 +1,81 @@
+.show-summary-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.show-summary-container h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.booking-summary-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Individual Card */
+.booking-summary-card > div {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+/* Different colors for each card */
+.card-total-booking {
+  border-left: 6px solid #007bff;
+}
+.card-return-items {
+  border-left: 6px solid #28a745;
+}
+.card-cancelled-items {
+  border-left: 6px solid #dc3545;
+}
+.card-currenttotal-booking{
+  border-left: 6px solid #ffc107;
+}
+
+/* Hover animation */
+.booking-summary-card > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Title */
+.booking-summary-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Count number */
+.booking-summary-card p {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+/* Icon Style */
+.summary-icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
