@@ -9,7 +9,6 @@ import bookinganaRoutes from "./routers/admindashboard.js"
 
 import db from "./dbconfig/dbconfig.js";
 
-
 dotenv.config();
 
 const app = express();
