@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Table, message } from "antd";
+import { message } from "antd";
 import axiosInstance from "../../apicalls/axiosInstance";
 import { Viewnotreturncomp } from "../../component/admin/Viewnotreturncomp";
 
