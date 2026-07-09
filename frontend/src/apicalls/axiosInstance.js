@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:4000/ags', // ✅ replace with your backend base URL
+  //baseURL: 'http://localhost:4000/ags', // ✅ replace with your backend base URL
+   baseURL: 'https://inventorybackend-4rqd.onrender.com/ags',
   headers: {
     'Content-Type': 'application/json',
   },
