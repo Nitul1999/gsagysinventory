@@ -1,13 +1,14 @@
 import axios from 'axios';
-
+console.log(process.env.REACT_APP_API_URL);
 const axiosInstance = axios.create({
-  //baseURL: 'http://localhost:4000/ags', // ✅ replace with your backend base URL
-   baseURL: 'https://inventorybackend-4rqd.onrender.com/ags',
+  //baseURL: 'http://localhost:4000/ags', // 
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
 });
-// 🟢 Attach JWT token automatically (if stored in localStorage)
+
+//  Attach JWT token automatically (if stored in localStorage)
 axiosInstance.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
@@ -19,7 +20,7 @@ axiosInstance.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// 🔴 Handle 401 (Unauthorized) or 403 (Forbidden) globally
+//  Handle 401 (Unauthorized) or 403 (Forbidden) globally
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
