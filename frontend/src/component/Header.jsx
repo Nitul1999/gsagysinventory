@@ -31,10 +31,20 @@ export const Header = () => {
         {/* RIGHT SECTION */}
         <Col style={{ textAlign: "right" }}>
           <Space size="large">
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FacebookFilled style={iconStyle} />
             </a>
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <InstagramFilled style={iconStyle} />
             </a>
             <a href="https://wa.me/8133820226" aria-label="WhatsApp">

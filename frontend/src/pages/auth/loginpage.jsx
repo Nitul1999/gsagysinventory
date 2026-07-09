@@ -120,7 +120,7 @@ export const Loginpage = () => {
               </Button>
             </Form.Item>
             <Form.Item style={{ textAlign: 'center' }}>
-              <a onClick={showModal} style={{ cursor: 'pointer' }}>Forgot password?</a> | <Link to={'/register'}> Register </Link>
+              <button onClick={showModal} style={{ cursor: 'pointer' }}>Forgot password?</button> | <Link to={'/register'}> Register </Link>
             </Form.Item>
           </Form>
         </Card>

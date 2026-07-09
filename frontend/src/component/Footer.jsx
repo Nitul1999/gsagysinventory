@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
 
 const { Footer: AntFooter } = Layout;
-const { Text, Link } = Typography;
+const { Text } = Typography;
 
 export const Footer = () => {
   return (

@@ -385,7 +385,7 @@ export const Dashboard = () => {
       doc.setLineWidth(0.3); // border thickness
       doc.rect(5, 5, pageWidth - 10, pageHeight - 10); // x, y, width, height
 
-      let currentY = 15;
+      // let currentY = 15;
 
       // ------------------------------------------------------------------
       // 🔵 HEADER — Logo + Title + Date

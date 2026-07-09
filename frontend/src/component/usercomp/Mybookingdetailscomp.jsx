@@ -58,7 +58,7 @@ export const Mybookingdetailscomp = ({ bookings, onUpdate, onDelete }) => {
     } else {
       form.setFieldsValue({ returned_date: null });
     }
-  }, [statusValue]);
+  }, [statusValue,form]);
 
   const handleUpdateSubmit = () => {
     form.validateFields().then((values) => {
@@ -283,7 +283,7 @@ export const Mybookingdetailscomp = ({ bookings, onUpdate, onDelete }) => {
       return d ? new Date(d).toLocaleDateString("en-GB") : "—";
     };
 
-    let finalTableY = 0;
+    // let finalTableY = 0;
 
     // ------------------------------------------------------------------
     // 🔵 PAGE-1 TABLE (Max 14 rows)
@@ -333,9 +333,9 @@ export const Mybookingdetailscomp = ({ bookings, onUpdate, onDelete }) => {
         getReturnDate(item),
       ]),
 
-      didDrawPage: (data) => {
-        finalTableY = data.cursor.y;
-      },
+      // didDrawPage: (data) => {
+      //   finalTableY = data.cursor.y;
+      // },
     });
 
     // ------------------------------------------------------------------
@@ -388,9 +388,9 @@ export const Mybookingdetailscomp = ({ bookings, onUpdate, onDelete }) => {
           getReturnDate(item),
         ]),
 
-        didDrawPage: (data) => {
-          finalTableY = data.cursor.y;
-        },
+        // didDrawPage: (data) => {
+        //   finalTableY = data.cursor.y;
+        // },
       });
     }
 
