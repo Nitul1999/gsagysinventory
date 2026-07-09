@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Table, Card, Typography, Tag, Spin, message } from "antd";
+import {  Card, Typography,  Spin, message } from "antd";
 import axiosInstance from "../../apicalls/axiosInstance";
 import { jwtDecode } from "jwt-decode";
 import { Mybookingdetailscomp } from "../../component/usercomp/Mybookingdetailscomp";
