@@ -661,7 +661,7 @@ export const Dashboard = () => {
                   Item Summary
                 </Button>
               </Col>
-            <Col xs={12} sm={6} md={4}>
+            {/* <Col xs={12} sm={6} md={4}>
                 <Button
                   block
                   icon={<FileTextOutlined />}
@@ -669,7 +669,7 @@ export const Dashboard = () => {
                 >
                   Booking Summary
                 </Button>
-              </Col>
+              </Col> */}
             </Row>
           </Card>
 
