@@ -13,8 +13,10 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:3000', // your React app
-  
+  origin: [
+    "http://localhost:3000", // Local development (CRA)
+    "https://gsagysinventory.vercel.app" // Your Vercel frontend
+  ],
   credentials: true,
 }));
 app.use(express.json());
