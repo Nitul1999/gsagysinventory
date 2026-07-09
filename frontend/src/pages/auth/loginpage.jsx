@@ -10,7 +10,7 @@ export const Loginpage = () => {
 
     const navigate = useNavigate();
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [, setLoading] = useState(false);
     const [forgotForm] = Form.useForm();
 
     //show forget password model

@@ -17,7 +17,7 @@ export const ViewAllBooking = () => {
   const [filterStatus, setFilterStatus] = useState("");
 
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
-  const [selectedRows, setSelectedRows] = useState([]);
+  // const [selectedRows, setSelectedRows] = useState([]);
 
   // Fetch Bookings
   const fetchBookings = async () => {

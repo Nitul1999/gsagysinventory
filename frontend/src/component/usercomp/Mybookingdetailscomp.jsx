@@ -4,7 +4,6 @@ import {
   Tag,
   Button,
   Space,
-  Popconfirm,
   Modal,
   Form,
   InputNumber,
@@ -15,7 +14,6 @@ import {
 import dayjs from "dayjs";
 import {
   EditOutlined,
-  DeleteOutlined,
   FileDoneOutlined,
   CheckCircleOutlined,
   CloseCircleOutlined,

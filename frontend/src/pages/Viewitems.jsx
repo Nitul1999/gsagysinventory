@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Table, Typography, Card, Spin, message } from "antd";
+import {message } from "antd";
 import axiosInstance from "../apicalls/axiosInstance";
 import { jwtDecode } from "jwt-decode";
 import { Itemcom } from "../component/itemcomp/Itemcom";
 
-const { Title } = Typography;
 export const Viewitems = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);

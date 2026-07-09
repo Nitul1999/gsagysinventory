@@ -13,28 +13,9 @@ import {
 const { Title, Paragraph, Text } = Typography;
 
 export const Contactpage = () => {
-  const contacts = [
-    {
-      name: "Nitul Sonowal",
-      designation: "System Developer & Technical Support",
-      phone: "+91 8133820226",
-      email: "nitulsonowal8133@gmail.com",
-    },
-    {
-      name: "John Doe",
-      designation: "Inventory Administrator",
-      phone: "+91 9876543210",
-      email: "admin@example.com",
-    },
-    {
-      name: "Jane Smith",
-      designation: "Committee Member",
-      phone: "+91 9123456789",
-      email: "committee@example.com",
-    },
-  ];
+ 
   const [members, setMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
  const fetchMembers = async () => {
     try {
       const response = await axiosInstance.get("/users/contact/person");

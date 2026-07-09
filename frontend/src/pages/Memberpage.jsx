@@ -17,8 +17,6 @@ import {
 import {
   DeleteOutlined,
   EditOutlined,
-  StopOutlined,
-  UserSwitchOutlined,
   TeamOutlined,
 } from "@ant-design/icons";
 import { jwtDecode } from "jwt-decode";

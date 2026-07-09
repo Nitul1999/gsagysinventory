@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect, useState } from "react";
 import { Layout } from 'antd';
 import './App.css';
 import { Navbar } from './component/Navbar';

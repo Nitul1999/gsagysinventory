@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   Card,
   Row,
-  succuess,
   Col,
   Statistic,
   Typography,
@@ -20,9 +19,7 @@ import {
 import {
   UserOutlined,
   ShoppingCartOutlined,
-  CheckCircleOutlined,
   AlertOutlined,
-  RiseOutlined,
   FolderOpenOutlined,
   FileTextOutlined,
   PlusCircleOutlined,
@@ -34,7 +31,7 @@ import logo from "../../assets/images/mainlogo.png";
 
 import axiosInstance from "../../apicalls/axiosInstance";
 
-import { Navigate, useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -49,10 +46,10 @@ export const Dashboard = () => {
   const [totalpending, setTotalPending] = useState(0);
   const [recentBookings, setRecentBookings] = useState();
   const [members, setMembers] = useState([]);
-  const [selectedMember, setSelectedMember] = useState(null);
+  const [, setSelectedMember] = useState(null);
   const [adminForm] = Form.useForm();
 
-  const [items, setItems] = useState([]);
+  const [, setItems] = useState([]);
 
   const [itemCostData, setItemCostData] = useState([]);
   const [totalInventoryCost, setTotalInventoryCost] = useState(0);
@@ -67,7 +64,7 @@ export const Dashboard = () => {
   const [setadmin, setSetadmin] = useState(false);
 
   const [form] = Form.useForm();
-  const [submitting, setSubmitting] = useState(false);
+  // const [, setSubmitting] = useState(false);
   const navigate = useNavigate();
   // Fetch Dashboard Data
   const totalBooking = async () => {
